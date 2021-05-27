@@ -1,0 +1,13 @@
+{
+  "first_name": "John",
+  "last_name": "Smith",
+  "dob": "1999-01-01",
+  "email": "foobar@gmail.com",
+  "phone": "234-234-2345",
+  "in_algeria": true,
+  "algeria_province": "Constantine",
+  "address": "123 Elm St.",
+  "referral_code": "20_PERCENT_OFF",
+  "dinar_amount": 360,
+  "txn_reference": "FOOBAR_BANK_TXN_NUMBER"
+}

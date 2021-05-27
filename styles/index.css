@@ -1,0 +1,76 @@
+/*
+ * Globals
+ */
+
+:root {
+  /* Using bootstrap default. Used for logo too */
+  --brand: #007bff;
+}
+
+html,
+body {
+  min-height: 100%;
+  background: var(--dark);
+}
+
+body:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image: url("/page-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+hr {
+  background-color: #ffffff33;
+}
+
+/*
+ * Bootstrap overrides
+ */
+
+.form-control {
+  color: white;
+  background: var(--dark);
+  border-color: var(--secondary);
+}
+.form-control:focus {
+  color: white;
+  background: var(--dark);
+}
+
+/*
+ * Custom (prefix with "arg")
+ */
+
+.arg-slide-fade-in {
+  opacity: 0;
+  animation-duration: 200ms;
+  animation-timing-function: ease-out;
+  animation-name: arg-fade-slide-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes arg-fade-slide-in {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
